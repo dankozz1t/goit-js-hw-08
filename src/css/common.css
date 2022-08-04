@@ -7,7 +7,7 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-color: teal;
   color: #212121;
   line-height: 1.5;
 }
@@ -15,4 +15,24 @@ body {
 img {
   display: block;
   max-width: 100%;
+}
+
+.nav__link {
+  display: inline-block;
+  margin: 2px;
+  padding: 5px;
+
+  font-size: 20px;
+  color: white;
+
+  border-radius: 5px;
+  background-color: teal;
+  transition: color 250ms linear, background-color 250ms linear;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  color: teal;
+
+  background-color: white;
 }
