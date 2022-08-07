@@ -20,8 +20,12 @@ function onSaveFormInput(event) {
 
 function onFormSubmit(event) {
   event.preventDefault();
-  event.target.reset();
+  if (!event.target.email.value || !event.target.message.value) {
+    alert('Enter all data');
+    return;
+  }
 
+  event.target.reset();
   console.log(data);
   localStorage.removeItem(LOCAL_STORAGE_KEY);
 }
